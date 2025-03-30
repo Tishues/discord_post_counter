@@ -13,8 +13,9 @@ It takes posts from discord and prints out relative information such as:
 <i>Reasliticly, my <b>Post Counter</b> can be used on any forum/posts with some slight adjustments but it was first designed for discord specifically</i>
 
 # Setup
-- Create an empty .txt file in the "posts" folder and name it post.txt 
-- (or adjust the path in main.py to match your file)
+- Create a directory/folder named "<b>posts</b>" in the project root
+- Create an empty file in the folder and name it "<b>post.txt</b>"
+- (or adjust the path in main.py to match your chosen file)
 - Run:
 ```python3 main.py```
 
