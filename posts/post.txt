@@ -1,0 +1,40 @@
+Tishues
+noizeboi
+Online
+
+Book Bot Problems.
+[7:16 AM] 
+OP
+ burlingk: In Build a Book Bot the book files have changed enough that a handful of the lessons cannot be completed.
+
+On a few, I was able to edit the book title to the format expected, but a few of the final tests would require a lot of editing on my part and I can't tell by looking at the test what it is actually looking for.
+[7:16 AM] 
+APP
+ Boots: I may have missed something, but to get the most out of the help forums make sure that you:
+
+Add a link to to the lesson you need help with.
+Put your code in a code block with syntax highlighting. Here's an example:
+```py
+print('Hello, World!')
+```
+[7:17 AM] 
+OP
+ burlingk: I am mostly bringing this up so that it can get looked at. I have moved on from that lesson.
+[7:19 AM] 
+OP
+ burlingk: I also just noticed that the system says that set of lessons was updated this month, so it is possible my complaint is outdated. ^^
+[7:24 AM]Shinsha: ive finished bookbot recently (literally yesterday) and it was fine
+
+one thing that i had to fix because some character / word counts didnt match the lesson tests was because i was using .sep() wrongly before 
+[7:25 AM]Shinsha: did you do .sep('') ?
+[7:25 AM]Shinsha: i did that and had to change to just .sep()
+[7:26 AM]Shinsha: or is it a different issue you're facing with the lesson tests?
+[7:34 AM] 
+OP
+ burlingk: I will have to go back to it when I get time. 🙂
+[7:35 AM] 
+OP
+ burlingk: BUT the most annoying bug was the checks where it was looking for title stuff from the books, that just wasn't there in the format it was looking for. 🙂
+[12:00 PM]Tishues: An idea to try, you could go back to the last lesson you completed, look at the solution files and compare those to your current code to adjust for the changes they may have made in the lessons since you last worked on it.
+[4:55 PM]wuworkshop: I just recently re-visited and finished Bookbot. I had completed the previous version. One mistake I made was that I was only looking at the new steps that were marked as incomplete. To pass all the new steps, I actually had to go back and re-read the completed steps because there were some tweaks to the wording for the printed output.
+[2:44 PM]Trav: I just did the bookbot like a week or two ago and don't recall having problems with titles or anything like that. It could really be some kind of bug, but is it also possible that there was some small discrepancy in your code that you didn't realise? If you want to share exactly which part of it wasn't working properly I can check if my solution is any different
