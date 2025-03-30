@@ -1,12 +1,12 @@
 import re
 
-# find path to text file
+# use the given path to open the text file
 def get_path_text(path):
     with open(path, 'r') as file:
         return file.read()
     
     
-#should get all usernames for all other functions to use
+# get all usernames for all other functions to use
 def get_usernames(text):
     find_op = re.findall(r'OP\n \w+', text)
     find_usernames_pm = re.findall(r'PM]\w+', text)
@@ -33,7 +33,6 @@ def get_commenters(text):
             user = user.lstrip('PM]')
             user = user.lstrip('AM]')
             commenters.append(user)
-    #print(f"Commenters: {commenter}")
     return commenters
     
 
@@ -52,10 +51,10 @@ def get_op(text):
 def get_unique_usernames(text):
     names = get_usernames(text)
     names = set(names)
-    print(f"unique names: {names}")   
+    print(f"Users: {names}")   
     
 
-#count user individual and total posts
+# count total posts & posts for each user
 def count_users_post(text):
     total_count = 0
     names = {}
@@ -66,13 +65,11 @@ def count_users_post(text):
             names[name] += 1
         else:
             names[name] = 1
+    print(f"User Posts: {names}")
+    print(f"Total Posts: {total_count}")
 
-        
-    #return names
-    print(f"post count: {names}")
-    print(f"total posts: {total_count}")
 
-    
+# count expected karma points from Boot.dev's Discord help threads
 def count_comment_karma(text):
     total_count = 0
     names = {}
@@ -83,17 +80,7 @@ def count_comment_karma(text):
             names[name] += 1
         else:
             names[name] = 1
-    print("User Karma Expected:")
+    print("Karma Expected:")
     for key in names:
         print(f"{key} = {(names[key] / total_count) * 200}")
         
-
-# A test
-#def count_users(path):
-#    count_me = 0
-#    total_users = 0
-#    with open(path, 'r') as file:
-#        for line_num, line in enumerate(file):
-#            if "Tishues" in line:
-#                count_me += 1
-#    print(f"Tishues: {count_me}")
