@@ -10,11 +10,12 @@ It takes posts from discord and prints out relative information such as:
 - Total posts amount
 - Expected Boot.dev Discord karma from help threads
 
-<i>Reasliticly, my <b>Post Counter</b> can be used on any forum/posts with some slight adjustments but it was first designed for discord specifically</i>
+<i>Reasliticly, my <b>Post Counter</b> can be used on any forum/posts with some slight adjustments but it was first designed for discord specifically</i>.
 
 # Setup
 - Create a directory/folder named "<b>posts</b>" in the project root
 - Create an empty file in the folder and name it "<b>post.txt</b>"
+- Copy & paste your post text into post.txt file
 - (or adjust the path in main.py to match your chosen file)
 - Run:
 ```python3 main.py```
